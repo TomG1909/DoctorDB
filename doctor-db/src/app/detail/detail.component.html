@@ -1,0 +1,49 @@
+<div *ngIf="doctor">
+    <mat-card class="profile-box">
+        <div class="name">
+            <img src="assets/{{doctor.img}}">
+
+            <span>{{doctor.title}}{{doctor.first_name}} {{doctor.last_name}}</span>
+
+        </div>
+    </mat-card>
+    <mat-card class="main-container">
+        <div class="adress">
+            <span>Adresse:</span>
+            <div class="mt-10">{{doctor.street}}<br> {{doctor.zipcode}} {{doctor.city}}</div>
+        </div>
+        <div class="opening-hours">
+            <span>Öffnungszeiten:</span>
+            <table>
+                <tr>
+                    <td>Montag:</td>
+                    <td>{{doctor.opening_hours.monday}}</td>
+                </tr>
+                <tr>
+                    <td>Dienstag:</td>
+                    <td>{{doctor.opening_hours.tuesday}}</td>
+                </tr>
+                <tr>
+                    <td>Mittwoch:</td>
+                    <td>{{doctor.opening_hours.wednesday}}</td>
+                </tr>
+                <tr>
+                    <td>Donnerstag:</td>
+                    <td>{{doctor.opening_hours.thursday}}</td>
+                </tr>
+                <tr>
+                    <td>Freitag:</td>
+                    <td>{{doctor.opening_hours.friday}}</td>
+                </tr>
+                <tr>
+                    <td>Samstag:</td>
+                    <td>{{doctor.opening_hours.saturday}}</td>
+                </tr>
+                <tr>
+                    <td>Sonntag:</td>
+                    <td>{{doctor.opening_hours.sunday}}</td>
+                </tr>
+            </table>
+        </div>
+    </mat-card>
+</div>

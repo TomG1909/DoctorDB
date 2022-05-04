@@ -1,0 +1,46 @@
+.profile-box {
+    display: flex;
+    background-color: rgb(35, 88, 203);
+    height: 150px;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    span {
+        padding-left: 20px;
+        font-size: 25px;
+        color: white;
+    }
+    img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+}
+
+.adress {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    height: 100px;
+}
+
+.main-container {
+    height: calc(100vh - 220px);
+    overflow: hidden;
+    span {
+        font-weight: bold;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+table {
+    margin-top: 10px;
+    width: 40vw;
+}

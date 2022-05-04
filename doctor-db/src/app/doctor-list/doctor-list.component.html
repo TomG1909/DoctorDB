@@ -1,0 +1,19 @@
+<mat-toolbar>
+    <img src="assets/img/doctor.png">
+    <span>Find your Doc</span>
+    <span class="example-spacer"></span>
+</mat-toolbar>
+<div *ngFor="let doctor of api.allDoctors, index as i">
+    <mat-card class="doc-box">
+        <img src="/assets/{{doctor.img}}">
+        <div class="info-container">
+
+            <a routerLink="{{doctor.id}}">
+                <div class="name">{{doctor.first_name}} {{doctor.last_name}}</div>
+            </a>
+            <div class="specialities">{{doctor.specialities}}
+
+            </div>
+        </div>
+    </mat-card>
+</div>

@@ -1,0 +1,38 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+mat-toolbar {
+    background-color: rgb(27, 77, 170);
+    img {
+        width: 50px;
+        margin-right: 15px;
+    }
+}
+
+.doc-box {
+    display: flex;
+    height: 120px;
+    margin-bottom: 15px;
+    img {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+.name {
+    color: rgb(0, 153, 255);
+    font-weight: bold;
+    text-decoration: underline;
+    padding-left: 10px;
+}
+
+.specialities {
+    color: gray;
+    padding-left: 10px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+}
