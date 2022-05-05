@@ -6,7 +6,7 @@ import { DoctorListComponent } from './doctor-list/doctor-list.component';
 
 const routes: Routes = [
   { path: '', component: DoctorListComponent },
-  { path: ':id', component: DetailComponent }];
+  { path: 'details/:id', component: DetailComponent }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

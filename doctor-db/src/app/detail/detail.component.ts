@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { ApiService } from '../api.service';
 
 @Component({
@@ -10,9 +10,8 @@ import { ApiService } from '../api.service';
 export class DetailComponent implements OnInit {
   doctorID: any;
   doctor: any;
-  id: number | null | undefined;
 
-  constructor(public api: ApiService, public route: ActivatedRoute) { }
+  constructor(public api: ApiService, public route: ActivatedRoute, public router: Router) { }
 
   ngOnInit(): void {
     this.loadDetailView();
@@ -26,18 +25,15 @@ export class DetailComponent implements OnInit {
 
     console.log('id', this.doctor)
 
-    /* this.route.paramMap.subscribe(params => {
-       const doctorID = +params.get('id') // Subscription param
-       this.doctor = this.api.allDoctors.find((doctor: { id: number; }) => doctor.id === doctorID);
-     })
- 
-     console.log('subscribe', this.doctor.id)*/
+    /*this.route.paramMap.subscribe(params => {
+      const doctorID = params.get('id') // Subscription param
+      this.doctor = this.api.allDoctors.find((doctor: { id: any; }) => doctor.id === doctorID);
+    })
+
+    console.log('subscribe', this.doctor)*/
+
 
 
 
   }
-
-
-
 }
-
